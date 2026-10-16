@@ -1,28 +1,28 @@
 class Felixctl < Formula
   desc "Command-line tool for the Felix streaming and cache broker"
   homepage "https://docs.getfelix.dev/getting-started/felixctl/"
-  version "0.6.0-preview.7"
+  version "0.6.0-preview.8"
   license "AGPL-3.0-only"
 
   on_macos do
     on_arm do
-      url "https://github.com/GetFelix/felix/releases/download/v0.6.0-preview.7/felixctl-v0.6.0-preview.7-aarch64-apple-darwin.tar.gz"
-      sha256 "fb24d77047807aa2996d4b6dfe23020933f199b442c8ea068eacb8af18e18418"
+      url "https://github.com/GetFelix/felix/releases/download/v0.6.0-preview.8/felixctl-v0.6.0-preview.8-aarch64-apple-darwin.tar.gz"
+      sha256 "04896a421967618fb2c08fbdc95f7bd9a68d5e66db5e7268c7e9ca13661f0248"
     end
     on_intel do
-      url "https://github.com/GetFelix/felix/releases/download/v0.6.0-preview.7/felixctl-v0.6.0-preview.7-x86_64-apple-darwin.tar.gz"
-      sha256 "d81c6b2a5be56f7cc50a6c48ea17aa9a5f816d96eee44f680e76477fac75d73d"
+      url "https://github.com/GetFelix/felix/releases/download/v0.6.0-preview.8/felixctl-v0.6.0-preview.8-x86_64-apple-darwin.tar.gz"
+      sha256 "984ecbe40e55ad9e0bbcacd4057566a37fa16d11184240538374211ad34974ea"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/GetFelix/felix/releases/download/v0.6.0-preview.7/felixctl-v0.6.0-preview.7-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0a87232092b3006200743b3d49368c4e6be92c17bc7dff8660d69281efbd0e24"
+      url "https://github.com/GetFelix/felix/releases/download/v0.6.0-preview.8/felixctl-v0.6.0-preview.8-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "da495191280bda0b06651ce9e27468e70b82b3911c0474ba213538e79d2a4aac"
     end
     on_intel do
-      url "https://github.com/GetFelix/felix/releases/download/v0.6.0-preview.7/felixctl-v0.6.0-preview.7-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "eb3182ec22834921bc907c824495f9f1898643a10cc92db27ce81b98284da0cc"
+      url "https://github.com/GetFelix/felix/releases/download/v0.6.0-preview.8/felixctl-v0.6.0-preview.8-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "52a44f4f25864af787a500a06fc012f71b365c01605f2cd513d226c0e43a5a0d"
     end
   end
 

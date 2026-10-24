@@ -1,28 +1,28 @@
 class Felixctl < Formula
   desc "Command-line tool for the Felix streaming and cache broker"
   homepage "https://docs.getfelix.dev/getting-started/felixctl/"
-  version "0.6.0-preview.9"
+  version "0.6.0"
   license "AGPL-3.0-only"
 
   on_macos do
     on_arm do
-      url "https://github.com/GetFelix/felix/releases/download/v0.6.0-preview.9/felixctl-v0.6.0-preview.9-aarch64-apple-darwin.tar.gz"
-      sha256 "fd6adb5c2744bdf3f7a4b7acc39b621a97caf20295c0b9ba080b3ab3e0fae61b"
+      url "https://github.com/GetFelix/felix/releases/download/v0.6.0/felixctl-v0.6.0-aarch64-apple-darwin.tar.gz"
+      sha256 "c8cbd3abbda10eac4d1ea965a3bb8cb62785e61109d28820dec520d79108dc6a"
     end
     on_intel do
-      url "https://github.com/GetFelix/felix/releases/download/v0.6.0-preview.9/felixctl-v0.6.0-preview.9-x86_64-apple-darwin.tar.gz"
-      sha256 "045a8147733912f574a6b8bd6cc2a66b23cc7c8010e52d0038da6490058e6387"
+      url "https://github.com/GetFelix/felix/releases/download/v0.6.0/felixctl-v0.6.0-x86_64-apple-darwin.tar.gz"
+      sha256 "145f1b95f40c8eb7ebc1b0d7fa6ed5db33d93f82715684fec809f375a22ab7b8"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/GetFelix/felix/releases/download/v0.6.0-preview.9/felixctl-v0.6.0-preview.9-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a75c83acfeb18e3d527ed7293086c3aeba8cc8c985ff31a2ef0b85ae88fa9331"
+      url "https://github.com/GetFelix/felix/releases/download/v0.6.0/felixctl-v0.6.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "42595d003090d4bcefc7cacfc1db8f63e56ff955fd8985f0b7f3c3a3d9d4ac9f"
     end
     on_intel do
-      url "https://github.com/GetFelix/felix/releases/download/v0.6.0-preview.9/felixctl-v0.6.0-preview.9-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "eff7e6c0e30edcc0afaafee93063a9a13c41c9e17fcd06f24d95fa500c65e301"
+      url "https://github.com/GetFelix/felix/releases/download/v0.6.0/felixctl-v0.6.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b908c261f1594897bd287ecd73007466738e79bb42beddc065b3639e8bbc5b06"
     end
   end
 

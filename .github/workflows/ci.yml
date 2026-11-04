@@ -38,7 +38,7 @@ jobs:
           mkdir -p "$(dirname "$tap_dir")"
           ln -s "$GITHUB_WORKSPACE" "$tap_dir"
       - name: brew style
-        run: $BREW style getfelix/tap
+        run: $BREW style Formula
       # --strict without --online: the release that writes a formula checks its urls and sha256.
       - name: brew audit
         run: $BREW audit --strict getfelix/tap

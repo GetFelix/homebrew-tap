@@ -37,6 +37,7 @@ jobs:
           tap_dir="$("$brew" --repository)/Library/Taps/getfelix/homebrew-tap"
           mkdir -p "$(dirname "$tap_dir")"
           cp -R "$GITHUB_WORKSPACE" "$tap_dir"
+          "$brew" trust getfelix/tap
       - name: brew style
         run: $BREW style Formula
       # --strict without --online: the release that writes a formula checks its urls and sha256.

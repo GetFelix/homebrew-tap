@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Install actionlint
+        run: bash <(curl -fsSL https://raw.githubusercontent.com/rhysd/actionlint/v1.7.7/scripts/download-actionlint.bash) 1.7.7
+      - name: actionlint
+        run: ./actionlint -color
+
+  formula:
+    runs-on: ubuntu-latest
+    env:
+      HOMEBREW_NO_INSTALL_FROM_API: "1"
+      HOMEBREW_NO_AUTO_UPDATE: "1"
+      HOMEBREW_NO_ANALYTICS: "1"
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Tap this checkout
+        run: |
+          brew=$(command -v brew || echo /home/linuxbrew/.linuxbrew/bin/brew)
+          echo "BREW=$brew" >> "$GITHUB_ENV"
+          tap_dir="$("$brew" --repository)/Library/Taps/getfelix/homebrew-tap"
+          mkdir -p "$(dirname "$tap_dir")"
+          ln -s "$GITHUB_WORKSPACE" "$tap_dir"
+      - name: brew style
+        run: $BREW style getfelix/tap
+      # --strict without --online: the release that writes a formula checks its urls and sha256.
+      - name: brew audit
+        run: $BREW audit --strict getfelix/tap
+
+  # The one check main requires, so a job added later is covered without changing the ruleset.
+  ci-ok:
+    name: CI ok
+    if: always()
+    needs: [lint, formula]
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          [[ "${{ join(needs.*.result, ' ') }}" =~ ^(success\ ?)+$ ]]

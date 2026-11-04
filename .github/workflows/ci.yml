@@ -42,7 +42,7 @@ jobs:
         run: $BREW style Formula
       # --strict without --online: the release that writes a formula checks its urls and sha256.
       - name: brew audit
-        run: $BREW audit --strict getfelix/tap/felixctl
+        run: $BREW audit --strict --tap getfelix/tap
 
   # The one check main requires, so a job added later is covered without changing the ruleset.
   ci-ok:

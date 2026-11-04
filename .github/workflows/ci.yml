@@ -36,12 +36,13 @@ jobs:
           echo "BREW=$brew" >> "$GITHUB_ENV"
           tap_dir="$("$brew" --repository)/Library/Taps/getfelix/homebrew-tap"
           mkdir -p "$(dirname "$tap_dir")"
-          ln -s "$GITHUB_WORKSPACE" "$tap_dir"
+          cp -R "$GITHUB_WORKSPACE" "$tap_dir"
+          "$brew" trust getfelix/tap
       - name: brew style
-        run: $BREW style getfelix/tap
+        run: $BREW style Formula
       # --strict without --online: the release that writes a formula checks its urls and sha256.
       - name: brew audit
-        run: $BREW audit --strict getfelix/tap
+        run: $BREW audit --strict --tap getfelix/tap
 
   # The one check main requires, so a job added later is covered without changing the ruleset.
   ci-ok:

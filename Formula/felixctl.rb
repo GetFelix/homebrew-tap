@@ -1,28 +1,28 @@
 class Felixctl < Formula
   desc "Command-line tool for the Felix streaming and cache broker"
   homepage "https://docs.getfelix.dev/getting-started/felixctl/"
-  version "0.7.0-preview.2"
+  version "0.7.0"
   license "AGPL-3.0-only"
 
   on_macos do
     on_arm do
-      url "https://github.com/GetFelix/felix/releases/download/v0.7.0-preview.2/felixctl-v0.7.0-preview.2-aarch64-apple-darwin.tar.gz"
-      sha256 "9dd95fb784e09ca6224494ca7735fad4b37f578614e95e1b3eb6c0aa58351c59"
+      url "https://github.com/GetFelix/felix/releases/download/v0.7.0/felixctl-v0.7.0-aarch64-apple-darwin.tar.gz"
+      sha256 "5a57dd46f91a1df8a24c560e33f2bee43e6623bae54b4cb02e0b36d315cf6125"
     end
     on_intel do
-      url "https://github.com/GetFelix/felix/releases/download/v0.7.0-preview.2/felixctl-v0.7.0-preview.2-x86_64-apple-darwin.tar.gz"
-      sha256 "c967b3ccbe0f7c141c80ce22372be4ca0c7d8e19f1b42ee164017e1ba07d61b5"
+      url "https://github.com/GetFelix/felix/releases/download/v0.7.0/felixctl-v0.7.0-x86_64-apple-darwin.tar.gz"
+      sha256 "e664198b7ff6bfbf36e8aa0b1715f4191c03320d2856f81bd41a501435273c4b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/GetFelix/felix/releases/download/v0.7.0-preview.2/felixctl-v0.7.0-preview.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d3b63a3cb38280991f7cde30ebe86576cb28622ef4cb0289ea3f2711f832b573"
+      url "https://github.com/GetFelix/felix/releases/download/v0.7.0/felixctl-v0.7.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "052c313f0aacc4a107ce785de5d96b52a706c0180dd789885d9de7491e9c496a"
     end
     on_intel do
-      url "https://github.com/GetFelix/felix/releases/download/v0.7.0-preview.2/felixctl-v0.7.0-preview.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1a41aaec77e26e4e64146413f656abbc4bef92cb2d1739d65c8dcb89a6dd6f8d"
+      url "https://github.com/GetFelix/felix/releases/download/v0.7.0/felixctl-v0.7.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "57073a3e1d64d8fd07c1879b22480aed16b9053f3df41c684d3cbc25ab55c9c9"
     end
   end
 

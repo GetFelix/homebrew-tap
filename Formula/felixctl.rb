@@ -1,28 +1,28 @@
 class Felixctl < Formula
   desc "Command-line tool for the Felix streaming and cache broker"
   homepage "https://docs.getfelix.dev/getting-started/felixctl/"
-  version "0.7.0"
+  version "0.7.1"
   license "AGPL-3.0-only"
 
   on_macos do
     on_arm do
-      url "https://github.com/GetFelix/felix/releases/download/v0.7.0/felixctl-v0.7.0-aarch64-apple-darwin.tar.gz"
-      sha256 "5a57dd46f91a1df8a24c560e33f2bee43e6623bae54b4cb02e0b36d315cf6125"
+      url "https://github.com/GetFelix/felix/releases/download/v0.7.1/felixctl-v0.7.1-aarch64-apple-darwin.tar.gz"
+      sha256 "0b95a164caca51dd9c53f6b38cff3c6bc51fd0d255d10e394d8007da00dd4285"
     end
     on_intel do
-      url "https://github.com/GetFelix/felix/releases/download/v0.7.0/felixctl-v0.7.0-x86_64-apple-darwin.tar.gz"
-      sha256 "e664198b7ff6bfbf36e8aa0b1715f4191c03320d2856f81bd41a501435273c4b"
+      url "https://github.com/GetFelix/felix/releases/download/v0.7.1/felixctl-v0.7.1-x86_64-apple-darwin.tar.gz"
+      sha256 "1e104e1c33326815cb5c3a896fb39ec7b941ec435270b82590c24f01ae1e8c5c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/GetFelix/felix/releases/download/v0.7.0/felixctl-v0.7.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "052c313f0aacc4a107ce785de5d96b52a706c0180dd789885d9de7491e9c496a"
+      url "https://github.com/GetFelix/felix/releases/download/v0.7.1/felixctl-v0.7.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e9a53a00d908c32905882a9a428ac08b81c41d2e730d8134e46fdc1ffa3c1e22"
     end
     on_intel do
-      url "https://github.com/GetFelix/felix/releases/download/v0.7.0/felixctl-v0.7.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "57073a3e1d64d8fd07c1879b22480aed16b9053f3df41c684d3cbc25ab55c9c9"
+      url "https://github.com/GetFelix/felix/releases/download/v0.7.1/felixctl-v0.7.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "76e10e44936409e134a8bee6102ffba7e5550c49222a6c6a955aa00e5b2316a3"
     end
   end
 

@@ -1,5 +1,11 @@
 # GetFelix Homebrew tap
 
+<p align="center">
+  <a href="https://github.com/GetFelix/homebrew-tap/actions/workflows/ci.yml">
+    <img src="https://github.com/GetFelix/homebrew-tap/actions/workflows/ci.yml/badge.svg?branch=main&event=push" alt="CI" />
+  </a>
+</p>
+
 Homebrew formulae for [Felix](https://github.com/GetFelix/felix). It has one formula, `felixctl`, the
 command-line tool for working with and managing a Felix cluster.
 

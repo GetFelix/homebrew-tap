@@ -1,7 +1,6 @@
 class Felixctl < Formula
   desc "Command-line tool for the Felix streaming and cache broker"
   homepage "https://docs.getfelix.dev/getting-started/felixctl/"
-  version "0.7.2"
   license "AGPL-3.0-only"
 
   on_macos do

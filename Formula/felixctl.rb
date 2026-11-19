@@ -5,23 +5,23 @@ class Felixctl < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/GetFelix/felix/releases/download/v0.7.2/felixctl-v0.7.2-aarch64-apple-darwin.tar.gz"
-      sha256 "177e34ba9bd4bbaf95f44cfc5d01a474e1ab92954fb75b1f40523f10b20b0c6e"
+      url "https://github.com/GetFelix/felix/releases/download/v0.8.0-preview.1/felixctl-v0.8.0-preview.1-aarch64-apple-darwin.tar.gz"
+      sha256 "e7363bbf3172fa3767d8856ef21c68bcc3afb9503374b3b33c0712627aeae5ae"
     end
     on_intel do
-      url "https://github.com/GetFelix/felix/releases/download/v0.7.2/felixctl-v0.7.2-x86_64-apple-darwin.tar.gz"
-      sha256 "ffb9ae62aa34bfbd420d0ef1898afc8a2b4d089cbd21976111b8239b172437a8"
+      url "https://github.com/GetFelix/felix/releases/download/v0.8.0-preview.1/felixctl-v0.8.0-preview.1-x86_64-apple-darwin.tar.gz"
+      sha256 "6be58429f7c66329e40f402d24ce70b4a2af0f2ba117d107c3df0cc4d27947c4"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/GetFelix/felix/releases/download/v0.7.2/felixctl-v0.7.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a13950f82d348ec44fef9d2831f6a9810ee07e5987e6dbb04ad21af650388b33"
+      url "https://github.com/GetFelix/felix/releases/download/v0.8.0-preview.1/felixctl-v0.8.0-preview.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6d6edbc8dc3181677db08a1f4da2422a6a75c84de825232ab1582dd6baf1a8de"
     end
     on_intel do
-      url "https://github.com/GetFelix/felix/releases/download/v0.7.2/felixctl-v0.7.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5552f7b464d70abfb7845cf63afd50d3073ae317bb3e6794e15ad3b1be4f2bd5"
+      url "https://github.com/GetFelix/felix/releases/download/v0.8.0-preview.1/felixctl-v0.8.0-preview.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "fb5760bc7bb0ddb2d6c950741d94a3c75d9cff13d9a4caea4af6f1c069af09a1"
     end
   end
 
